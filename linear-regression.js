@@ -1,9 +1,9 @@
-const xsString = "20.0 30.5 40.0 55.1 60.3 74.9 88.4 95.2"
-const ysString = "1.8 3.0 4.8 5.0 6.5 7.0 9.0 9.1"
+const xsString = "1.0, 1.0, 1.0, 1.5, 1.5, 1.5, 1.75, 1.75, 1.75, 2.5, 2.5, 2.5, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 10.0, 10.0, 10.0"
+const ysString = "525, 520, 527, 785, 780, 790, 915, 900, 922, 1300, 1295, 1310, 1575, 1565, 1582, 2100, 2110, 2090, 3125, 3120, 3133, 5250, 5256, 5245"
 
-const xs = xsString.split(' ')
+const xs = xsString.split(/,?\s/)
     .map(x => Number(x))
-const ys = ysString.split(' ')
+const ys = ysString.split(/,?\s/)
     .map(y => Number(y))
 
 const n = xs.length
@@ -28,4 +28,4 @@ console.log(`Sum of ys: ${ySum}`)
 console.log(`Sum of xs squared: ${xSquaresSum}`)
 console.log(`Sum of ys squared: ${ySquaresSum}`)
 console.log(`Sum of xs times ys: ${xySum}`)
-console.log(`ŷ = ${b0.toFixed(4)} + ${b1.toFixed(4)}x`)
+console.log(`ŷ = ${b0} + ${b1}x`)
