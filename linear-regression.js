@@ -1,5 +1,5 @@
-const xsString = "20.0 30.5 40.0 55.1 60.3 74.9 88.4 95.2"
-const ysString = "1.8 3.0 4.8 5.0 6.5 7.0 9.0 9.1"
+const xsString = "0 379 584 743 847 1867"
+const ysString = "6.97 9.18 9.92 10.23 11.24 12.26"
 
 const b0NullHypothesisValue = 0
 const b1NullHypothesisValue = 0
