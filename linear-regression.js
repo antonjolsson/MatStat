@@ -36,30 +36,30 @@ const sd = Math.sqrt(variance)
 const b0H0TestStatistic = (b0 - b0NullHypothesisValue) / ((sd * Math.sqrt(xSquaresSum)) / Math.sqrt(n * sxx))
 const b1H0TestStatistic = b1 / (sd / Math.sqrt(sxx))
 
-console.log(`x values: ${xs}`)
-console.log(`y values: ${ys}`)
-console.log(`Data paired: ${xs.map((x, i) => `{${x},${ys[i]}}`)}`)
-console.log(`n: ${n}`)
-console.log(`Mean of x: ${meanX}`)
-console.log(`Mean of y: ${meanY}`)
+console.log(`x values: ${xs}
+y values: ${ys}
+Data paired: ${xs.map((x, i) => `{${x},${ys[i]}}`)}
+n: ${n}
+Mean of x: ${meanX}
+Mean of y: ${meanY}
 
-console.log(`\nSum of xs: ${xSum}`)
-console.log(`Sum of ys: ${ySum}`)
-console.log(`Sum of xs squared: ${xSquaresSum}`)
-console.log(`Sum of ys squared: ${ySquaresSum}`)
-console.log(`Sum of xs times ys: ${xySum}`)
+Sum of xs: ${xSum}
+Sum of ys: ${ySum}
+Sum of xs squared: ${xSquaresSum}
+Sum of ys squared: ${ySquaresSum}
+Sum of xs times ys: ${xySum}
 
-console.log(`\nSxx: ${sxx}`)
-console.log(`Syy: ${syy}`)
-console.log(`Sxy: ${sxy}`)
-console.log(`SSE: ${sse}`)
+Sxx: ${sxx}
+Syy: ${syy}
+Sxy: ${sxy}
+SSE: ${sse}
 
-console.log(`\nŷ = ${b0} + ${b1}x`)
-console.log(`Variance: ${variance}`)
-console.log(`SD: ${sd}`)
+y_i = ${b0} + ${b1}x_i + e_i
+Variance: ${variance}
+SD: ${sd}
 
-console.log(`\nTest statistic (T${n - 2}) for b0 null hypothesis (${b0NullHypothesisValue}): ${b0H0TestStatistic}`)
-console.log(`Test statistic (T${n - 2}) for b1 null hypothesis (${b1NullHypothesisValue}): ${b1H0TestStatistic}`)
+Test statistic (T${n - 2}) for b0 null hypothesis (${b0NullHypothesisValue}): ${b0H0TestStatistic}
+Test statistic (T${n - 2}) for b1 null hypothesis (${b1NullHypothesisValue}): ${b1H0TestStatistic}`)
 
 
 
